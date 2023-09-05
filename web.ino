@@ -13,7 +13,7 @@ const String firebasePath = "/status/status";
 void setup()
 {
   Serial.begin(9600);
-  pinMode(13, OUTPUT);
+  pinMode(2, OUTPUT);
   pinMode(3, OUTPUT);
   pinMode(4, OUTPUT);
 
@@ -108,7 +108,7 @@ String getFirebaseStatus()
 
 void controlLEDs(int red, int yellow, int green)
 {
-  digitalWrite(13, red);
+  digitalWrite(2, red);
   digitalWrite(3, yellow);
   digitalWrite(4, green);
 }
